@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Boire Correctement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background: url('https://source.unsplash.com/1600x900/?futuristic,abstract') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        h1, h2 {
+            color: #FFD700;
+        }
+        .section {
+            margin-bottom: 20px;
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .section img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>Comment Boire Correctement</h1>
+    
+    <button onclick="toggleSection('eau')">Boire de l'eau</button>
+    <div class="section" id="eau">
+        <h2>1. Boire de l'eau</h2>
+        <p>Buvez au moins 1,5 litre d'eau par jour. Utilisez une bouteille réutilisable pour rester hydraté.</p>
+        <img src="https://source.unsplash.com/100x100/?water" alt="Eau">
+    </div>
+    
+    <button onclick="toggleSection('vin')">Boire du vin</button>
+    <div class="section" id="vin">
+        <h2>2. Boire du vin</h2>
+        <p>Servez le vin rouge à température ambiante et le vin blanc frais. Appréciez en petites gorgées.</p>
+        <img src="https://source.unsplash.com/100x100/?wine" alt="Vin">
+    </div>
+    
+    <button onclick="toggleSection('cafe')">Boire du café</button>
+    <div class="section" id="cafe">
+        <h2>3. Boire du café</h2>
+        <p>Le café doit être bu chaud, mais pas brûlant. Évitez d'en boire en excès pour limiter la caféine.</p>
+        <img src="https://source.unsplash.com/100x100/?coffee" alt="Café">
+    </div>
+    
+    <button onclick="toggleSection('cocktail')">Boire des cocktails</button>
+    <div class="section" id="cocktail">
+        <h2>4. Boire des cocktails</h2>
+        <p>Buvez lentement pour apprécier les saveurs. Alternez avec de l'eau pour éviter la déshydratation.</p>
+        <img src="https://source.unsplash.com/100x100/?cocktail" alt="Cocktail">
+    </div>
+    
+    <button onclick="toggleSection('the')">Boire du thé</button>
+    <div class="section" id="the">
+        <h2>5. Boire du thé</h2>
+        <p>Le thé doit être infusé à la bonne température selon son type. Évitez d'y ajouter trop de sucre.</p>
+        <img src="https://source.unsplash.com/100x100/?tea" alt="Thé">
+    </div>
+    
+    <button onclick="toggleSection('jus')">Boire du jus</button>
+    <div class="section" id="jus">
+        <h2>6. Boire du jus</h2>
+        <p>Privilégiez les jus frais et naturels sans sucres ajoutés. Buvez-les modérément pour éviter un excès de sucre.</p>
+        <img src="https://source.unsplash.com/100x100/?juice" alt="Jus">
+    </div>
+    
+    <h2>Boissons Dangereuses</h2>
+    <button onclick="toggleSection('alcool_fort')">Alcool fort</button>
+    <div class="section" id="alcool_fort">
+        <h2>7. Alcool fort</h2>
+        <p>La consommation excessive d'alcool fort peut causer des dommages au foie et entraîner une dépendance. À consommer avec modération.</p>
+        <img src="https://source.unsplash.com/100x100/?whiskey" alt="Alcool fort">
+    </div>
+    
+    <button onclick="toggleSection('boisson_energie')">Boissons énergisantes</button>
+    <div class="section" id="boisson_energie">
+        <h2>8. Boissons énergisantes</h2>
+        <p>Ces boissons contiennent beaucoup de caféine et de sucre, ce qui peut entraîner des problèmes cardiaques et de l'hypertension.</p>
+        <img src="https://source.unsplash.com/100x100/?energy-drink" alt="Boisson énergisante">
+    </div>
+    
+    <button onclick="toggleSection('soda')">Sodas</button>
+    <div class="section" id="soda">
+        <h2>9. Sodas</h2>
+        <p>Les sodas sont riches en sucre et en additifs artificiels, ce qui peut provoquer des problèmes de santé comme l'obésité et le diabète.</p>
+        <img src="https://source.unsplash.com/100x100/?soda" alt="Soda">
+    </div>
+</body>
+</html>
